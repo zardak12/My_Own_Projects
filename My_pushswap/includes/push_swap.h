@@ -20,5 +20,10 @@ typedef struct	s_push_swap
 	t_a	*s_b;
 }				t_p;
 
+void		error();
+void		print_steck(t_a *stack);
+t_a			*create_stack(t_a	*stack_a,char *b);
+t_a		*create_first_stack(t_a		*stack_a,char *b);
+t_p			*validator(int a,char **b);
 
 #endif
