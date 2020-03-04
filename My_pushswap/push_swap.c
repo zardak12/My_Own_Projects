@@ -1,5 +1,4 @@
-#include "includes/push_swap.h"
-#include <stdio.h>
+#include "push_swap.h"
 
 
 int main (int ac,char **av)
@@ -7,6 +6,7 @@ int main (int ac,char **av)
 	t_p *stack;
 
 	stack = validator(ac,av);
+	s_a(&stack->s_a);
 	print_steck(stack->s_a);
 
 	return(0);

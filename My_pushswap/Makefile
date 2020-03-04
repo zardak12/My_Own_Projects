@@ -1,7 +1,7 @@
 NAME = libpushswap.a
-NAME_1 = push_swap
+
 CC = gcc
-FLAGS = -Wall -Werror -Wextra 
+FLAGS = -Wall -Werror -Wextra
 DEFLAGS = $(FLAGS) -g
 HEADER_DIRECTORY = ./includes/
 LIBFT = ./Libft/
@@ -89,15 +89,22 @@ PRINTF_COMPILED = free_conv.o \
 
 GET_COMPILED = get_next_line.o \
 
+PUSH_COMPILE =	push_swap.c \
+				validation.c\
+				mix.c\
+
+
 COMPILED = $(FT_COMPILED) $(PRINTF_COMPILED) $(GET_COMPILED)
 
 .PHONY: re fclean clean
 
 all : $(NAME)
 
+
 $(NAME):$(COMPILED)
 	ar rc $(NAME) $(COMPILED)
 	ranlib $(NAME)
+	$(CC) -o pushswap $(DFLAGS) $(PUSH_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
 $(FT_COMPILED): %.o:$(LIBFT)%.c $(LIBFT_H)
 	$(CC) -c $(DFLAGS) -I $(HEADER_DIRECTORY) $< -o $@
 
@@ -107,7 +114,7 @@ $(PRINTF_COMPILED) : %.o:$(PRINTF)%.c $(PRINTF_H)
 $(GET_COMPILED): %.o:$(GET_NEXT_LINE)%.c $(GET_NEXT_LINE_H)
 	$(CC) -c $(DFLAGS) -I $(HEADER_DIRECTORY) $< -o $@
 
-clean: 
+clean:
 	rm -f $(COMPILED)
 
 fclean: clean
