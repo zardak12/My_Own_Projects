@@ -92,6 +92,7 @@ GET_COMPILED = get_next_line.o \
 PUSH_COMPILE =	push_swap.c \
 				validation.c\
 				mix.c\
+				additional.c\
 
 
 COMPILED = $(FT_COMPILED) $(PRINTF_COMPILED) $(GET_COMPILED)

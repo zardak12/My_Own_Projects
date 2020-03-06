@@ -36,7 +36,7 @@ void		print_steck(t_a *stack)
 t_a		*create_first_stack(t_a		**stack_a,char *b)
 {
 		if (!((*stack_a) = (t_a*)malloc(sizeof(t_a))))
-		return NULL;
+			return NULL;
 		(*stack_a)->f_a = ft_atoi(b);
 		(*stack_a)->next = NULL;
 		return (*stack_a);
@@ -57,7 +57,7 @@ t_a		*create_stack(t_a	**stack_a,char *b)
 	*stack_a = (*stack_a)->next;
 	(*stack_a)->f_a = ft_atoi(b);
 	(*stack_a)->next = NULL;
-	(*stack_a) = head;
+	(*stack_a)= head;
 	return head;
 }
 
@@ -76,6 +76,7 @@ t_p		*validator(int a,char **b)
 	while (b[i])
 	{
 		create_stack(&(new->s_a),b[i]);
+		new->count_a = i;
 		i++;
 	}
 	return new;

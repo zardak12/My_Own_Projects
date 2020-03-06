@@ -6,7 +6,7 @@ int main (int ac,char **av)
 	t_p *stack;
 
 	stack = validator(ac,av);
-	s_a(&stack->s_a);
+	rr_a(&stack->s_a,stack->count_a);
 	print_steck(stack->s_a);
 
 	return(0);
