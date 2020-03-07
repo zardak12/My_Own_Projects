@@ -1,0 +1,3 @@
+/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/CMakeFiles/My_pushswap.dir

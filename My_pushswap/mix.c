@@ -64,16 +64,47 @@ void		rr_a(t_a	**stack,int count)
 	t_a *new;
 	int tmp;
 
-	new = *stack;
 	head = *stack;
 	if(count < 2)
 		err("Ошибка");
-	while((*stack)->next != NULL)
-	{
-		(*stack) = (*stack)->next;
+	while((*stack)->next != NULL && (*stack)->next->next != NULL)
+    {
+        *stack = (*stack)->next;
+    }
+    (*stack)->next->next = head;
+	new = (*stack)->next;
+    (*stack)->next = NULL;
+    *stack = new;
+}
+
+void        rr_b(t_a **stack_b,int count,t_p    *new)
+{
+	rr_a(stack_b,count);
+	new->count_b = new->count_a;
+}
+
+void        rr_s(t_a    **stack_a,t_a   **stack_b,int count,t_p *new)
+{
+	rr_a(stack_a,count);
+	rr_b(stack_b,count,new);
+}
+
+void        p_b(t_a     **stack_a,t_a     **stack_b,t_p *new)
+{
+	t_a *tmp;
+
+	if(*stack_b == NULL) {
+		(*stack_b) = *stack_a;
+
+		(*stack_b)->next = NULL;
+		(*stack_a) = (*stack_a)->next;
 	}
-	new = *stack;
-	new->next = NULL;
-	*stack = head;
-	ft_lstadd_a(stack,new);
+	else
+	{
+		tmp = (*stack_a)->next;
+		(*stack_a)->next = *stack_b;
+		*stack_b = *stack_a;
+		*stack_a = tmp;
+	}
+
 }

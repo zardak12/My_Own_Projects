@@ -1,5 +1,4 @@
 #include"push_swap.h"
-#include <stdio.h>
 
 int	ft_myatoi(const char *str)
 {
@@ -24,16 +23,7 @@ int	ft_myatoi(const char *str)
 	return (sign * num);
 }
 
-void		print_steck(t_a *stack)
-{
-	if(stack)
-	{
-		ft_printf("%d\n",stack->f_a);
-		print_steck(stack->next);
-	}
-}
-
-t_a		*create_first_stack(t_a		**stack_a,char *b)
+t_a		*create_first_stack(t_a    **stack_a,char *b)
 {
 		if (!((*stack_a) = (t_a*)malloc(sizeof(t_a))))
 			return NULL;
@@ -75,7 +65,8 @@ t_p		*validator(int a,char **b)
 	i++;
 	while (b[i])
 	{
-		create_stack(&(new->s_a),b[i]);
+
+		create_stack(&new->s_a,b[i]);
 		new->count_a = i;
 		i++;
 	}

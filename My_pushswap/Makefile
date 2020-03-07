@@ -105,7 +105,7 @@ all : $(NAME)
 $(NAME):$(COMPILED)
 	ar rc $(NAME) $(COMPILED)
 	ranlib $(NAME)
-	$(CC) -o pushswap $(DFLAGS) $(PUSH_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
+	$(CC) -g -o pushswap $(DFLAGS) $(PUSH_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
 $(FT_COMPILED): %.o:$(LIBFT)%.c $(LIBFT_H)
 	$(CC) -c $(DFLAGS) -I $(HEADER_DIRECTORY) $< -o $@
 
