@@ -53,8 +53,10 @@ libft.h
 ../includes/libft.h
 get_next_line.h
 ../includes/get_next_line.h
+limits.h
+-
 
-/Users/kosgrey/Desktop/tmp/My_pushswap/mix.c
+/Users/kosgrey/Desktop/tmp/My_pushswap/push_swap.c
 push_swap.h
 /Users/kosgrey/Desktop/tmp/My_pushswap/push_swap.h
 

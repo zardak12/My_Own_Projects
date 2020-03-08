@@ -1,110 +1,88 @@
 #include "push_swap.h"
 
-void	ft_lstadd_a(t_a **alst, t_a *new)
-{
-	new->next = *alst;
-	*alst = new;
-}
-
-void		s_a(t_a	**stack,int count)
+void		c_s(t_a	**stack)
 {
 	int tmp;
-	if(count < 2)
+	if(*stack != NULL && (*stack)->next != NULL) {
+		tmp = (*stack)->f_a;
+		(*stack)->f_a = (*stack)->next->f_a;
+		(*stack)->next->f_a = tmp;
+	}
+	else
+	{
 		err("Ошибка");
-	tmp = (*stack)->f_a;
-	(*stack)->f_a = (*stack)->next->f_a;
-	(*stack)->next->f_a = tmp;
+	}
 }
 
-void		s_b(t_a	**stack,int count,t_p *new)
+void		c_ss(t_a	**stack_a,t_a	**stack_b)
 {
-	s_a(stack,count);
-	new->count_b = new->count_a;
+	c_s(stack_a);
+	c_s(stack_b);
 }
 
-void		s_s(t_a	**stack_a,t_a	**stack_b,int count,t_p *new)
-{
-	s_a(stack_a,count);
-	s_b(stack_b,count,new);
-}
-
-void		r_a(t_a	**stack,int count)
+void		c_r(t_a	**stack)
 {
 	int tmp;
 	t_a 	*head;
 
-	head = (*stack);
-	tmp = (*stack)->f_a;
-	if(count < 2)
-		err("Ошибка");
-	while((*stack)->next != NULL)
-	{
-		(*stack)->f_a = (*stack)->next->f_a;
-		(*stack)=(*stack)->next;
+	if(*stack != NULL && (*stack)->next != NULL) {
+		head = (*stack);
+		tmp = (*stack)->f_a;
+		while ((*stack)->next != NULL) {
+			(*stack)->f_a = (*stack)->next->f_a;
+			(*stack) = (*stack)->next;
+		}
+		(*stack)->f_a = tmp;
+		(*stack) = head;
 	}
-	(*stack)->f_a = tmp;
-	(*stack) = head;
 }
 
-void		r_b(t_a	**stack_b,int count,t_p *new)
+void		c_rs(t_a	**stack_a,t_a	**stack_b)
 {
-	r_a(stack_b,count);
-	new->count_b = new->count_a;
+	c_s(stack_a);
+	c_s(stack_b);
 }
 
-void		r_s(t_a	**stack_a,t_a	**stack_b,int count,t_p *new)
-{
-	r_a(stack_a,count);
-	r_b(stack_b,count,new);
-}
-
-void		rr_a(t_a	**stack,int count)
-{
-	t_a	*head;
+void		c_rr(t_a	**stack) {
+	t_a *head;
 	t_a *new;
 	int tmp;
 
-	head = *stack;
-	if(count < 2)
-		err("Ошибка");
-	while((*stack)->next != NULL && (*stack)->next->next != NULL)
-    {
-        *stack = (*stack)->next;
-    }
-    (*stack)->next->next = head;
-	new = (*stack)->next;
-    (*stack)->next = NULL;
-    *stack = new;
+	if (*stack != NULL && (*stack)->next != NULL) {
+		head = *stack;
+		while ((*stack)->next != NULL && (*stack)->next->next != NULL) {
+			*stack = (*stack)->next;
+		}
+		(*stack)->next->next = head;
+		new = (*stack)->next;
+		(*stack)->next = NULL;
+		*stack = new;
+	}
 }
 
-void        rr_b(t_a **stack_b,int count,t_p    *new)
+void        c_rrs(t_a    **stack_a,t_a   **stack_b)
 {
-	rr_a(stack_b,count);
-	new->count_b = new->count_a;
+	c_rr(stack_a);
+	c_rr(stack_b);
 }
 
-void        rr_s(t_a    **stack_a,t_a   **stack_b,int count,t_p *new)
-{
-	rr_a(stack_a,count);
-	rr_b(stack_b,count,new);
-}
-
-void        p_b(t_a     **stack_a,t_a     **stack_b,t_p *new)
+void        p_a_b(t_a     **take,t_a     **put)
 {
 	t_a *tmp;
 
-	if(*stack_b == NULL) {
-		(*stack_b) = *stack_a;
-
-		(*stack_b)->next = NULL;
-		(*stack_a) = (*stack_a)->next;
+	if(*put == NULL) {
+//		(*put) = ft_memalloc(sizeof(t_a));
+//		(*put)->f_a = (*take)->f_a;
+//		(*take) = (*put)->next;
+		*put = *take;
+		*take = (*take)->next;
+		(*put)->next = NULL;
 	}
 	else
 	{
-		tmp = (*stack_a)->next;
-		(*stack_a)->next = *stack_b;
-		*stack_b = *stack_a;
-		*stack_a = tmp;
+		tmp = *take;
+		*take =(*take)->next;
+		tmp->next = *put;
+		*put = tmp;
 	}
-
 }
