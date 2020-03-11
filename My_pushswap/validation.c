@@ -73,5 +73,7 @@ t_p		*validator(int a,char **b)
 		create_stack(&new->s_a,b[i]);
 		i++;
 	}
+	new->count_a = i - 1;
+	min_max_med(new);
 	return new;
 }

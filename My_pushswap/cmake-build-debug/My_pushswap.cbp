@@ -8,345 +8,341 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug"/>
+				<Option working_dir="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug"/>
+				<Option working_dir="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug"/>
+				<Option working_dir="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="My_pushswap">
-				<Option output="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/My_pushswap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug"/>
+				<Option output="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/My_pushswap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/kosgrey/Desktop/tmp/My_pushswap/includes"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/mark/Desktop/pushswap/My_pushswap/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_pushswap"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_pushswap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="My_pushswap/fast">
-				<Option output="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/My_pushswap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug"/>
+				<Option output="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/My_pushswap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/kosgrey/Desktop/tmp/My_pushswap/includes"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/mark/Desktop/pushswap/My_pushswap/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_pushswap/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kosgrey/Desktop/tmp/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_pushswap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Get_next_line/get_next_line.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Get_next_line/get_next_line.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_atoi.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_atoi.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_bzero.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_bzero.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_index_of.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_index_of.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_isalnum.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_isalnum.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_isalpha.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_isalpha.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_isascii.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_isascii.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_isdigit.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_isdigit.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_isprint.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_isprint.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_itoa.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_itoa.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstadd.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstadd.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstdel.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstdel.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstdelone.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstdelone.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstiter.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstiter.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstmap.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstmap.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_lstnew.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_lstnew.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_ltoa.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_ltoa.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memalloc.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memalloc.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memccpy.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memccpy.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memchr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memchr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memcmp.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memcmp.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memcpy.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memcpy.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memdel.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memdel.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memmove.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memmove.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_memset.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_memset.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putchar.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putchar.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putchar_fd.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putchar_fd.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putendl.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putendl.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putendl_fd.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putendl_fd.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putnbr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putnbr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putnbr_fd.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putstr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putstr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_putstr_fd.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_putstr_fd.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_rindex_of.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_rindex_of.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strcat.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strcat.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strchr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strchr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strclr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strclr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strcmp.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strcmp.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strcount.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strcount.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strcpy.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strcpy.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strdel.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strdel.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strdup.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strdup.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strequ.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strequ.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_striter.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_striter.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_striteri.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_striteri.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strjoin.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strjoin.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strlcat.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strlcat.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strlen.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strlen.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strlen_until.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strlen_until.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strmap.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strmap.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strmapi.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strmapi.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strncat.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strncat.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strncmp.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strncmp.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strncpy.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strncpy.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strnequ.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strnequ.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strnew.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strnew.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strnstr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strnstr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strrchr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strrchr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strrev.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strrev.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strsplit.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strsplit.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strstr.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strstr.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strsub.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strsub.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strtrim.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strtrim.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_strunderscore.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_strunderscore.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_tolower.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_tolower.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Libft/ft_toupper.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Libft/ft_toupper.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/error.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/error.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/float.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/float.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/float_2.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/float_2.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/free_conv.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/free_conv.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/ft_printf.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/ft_printf.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/init_conv.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/init_conv.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/misc.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/misc.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/number_conv.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/number_conv.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/parser.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/parser.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/print.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/print.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/print_blank.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/print_blank.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/print_conversion.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/print_conversion.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/print_num.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/print_num.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/Printf/string_conv.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/Printf/string_conv.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/additional.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/additional.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/includes/ft_printf.h">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/includes/ft_printf.h">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/includes/get_next_line.h">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/includes/get_next_line.h">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/includes/libft.h">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/includes/libft.h">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/includes/push_swap.h">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/includes/push_swap.h">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/mix.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/mix.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/push_swap.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/push_swap.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/validation.c">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/validation.c">
 			<Option target="My_pushswap"/>
 		</Unit>
-		<Unit filename="/Users/kosgrey/Desktop/tmp/My_pushswap/CMakeLists.txt">
+		<Unit filename="/Users/mark/Desktop/pushswap/My_pushswap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

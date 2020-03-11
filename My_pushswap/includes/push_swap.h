@@ -19,6 +19,10 @@ typedef struct	s_push_swap
 {
 	t_a	*s_a;
 	t_a	*s_b;
+	int count_a;
+	int max;
+	int min;
+	int mediana;
 }				t_p;
 
 void			print_steck(t_a *stack);
@@ -35,6 +39,6 @@ void		    c_rr(t_a	**stack);
 void            c_rrs(t_a    **stack_a,t_a   **stack_b);
 void            p_a_b(t_a     **take,t_a     **put);
 void            ft_stack_three(t_a **stack);
-void            ft_stack_five(t_a **stack_1,t_a **stack_2);
-void            find_min(t_a    **stack1,t_a    **stack_2);
+t_p             *min_max_med(t_p *new);
+int             *quick_sort(int *massiv,int min,int size);
 #endif
