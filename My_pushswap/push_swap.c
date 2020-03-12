@@ -6,6 +6,8 @@ int main (int ac,char **av)
 	t_p *stack;
 
 	stack = validator(ac,av);
-	//print_steck(stack->s_a);
+    sort_other(stack);
+
+    print_steck(stack->s_b);
 	return(0);
 }

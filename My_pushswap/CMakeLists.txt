@@ -93,4 +93,5 @@ add_executable(My_pushswap
         additional.c
         mix.c
         push_swap.c
+        sort.c
         validation.c)

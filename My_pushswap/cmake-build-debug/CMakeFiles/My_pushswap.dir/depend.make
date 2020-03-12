@@ -266,6 +266,12 @@ CMakeFiles/My_pushswap.dir/push_swap.c.o: ../includes/libft.h
 CMakeFiles/My_pushswap.dir/push_swap.c.o: ../includes/push_swap.h
 CMakeFiles/My_pushswap.dir/push_swap.c.o: ../push_swap.c
 
+CMakeFiles/My_pushswap.dir/sort.c.o: ../includes/ft_printf.h
+CMakeFiles/My_pushswap.dir/sort.c.o: ../includes/get_next_line.h
+CMakeFiles/My_pushswap.dir/sort.c.o: ../includes/libft.h
+CMakeFiles/My_pushswap.dir/sort.c.o: ../includes/push_swap.h
+CMakeFiles/My_pushswap.dir/sort.c.o: ../sort.c
+
 CMakeFiles/My_pushswap.dir/validation.c.o: ../includes/ft_printf.h
 CMakeFiles/My_pushswap.dir/validation.c.o: ../includes/get_next_line.h
 CMakeFiles/My_pushswap.dir/validation.c.o: ../includes/libft.h

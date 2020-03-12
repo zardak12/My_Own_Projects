@@ -44,9 +44,9 @@ t_p     *min_max_med(t_p *new)
     massiv = quick_sort(massiv,0,new->count_a);
     new->min = massiv[0];
     new->max = massiv[new->count_a-1];
-    new->mediana = massiv[new->count_a/2];
+    new->mediana = (massiv[new->count_a/2] + massiv[new->count_a/2 -1])/2;
     i = 0;
-    while(massiv[i]) {
+    while(i < (new->count_a)) {
         ft_printf("%d\t", massiv[i]);
         i++;
     }

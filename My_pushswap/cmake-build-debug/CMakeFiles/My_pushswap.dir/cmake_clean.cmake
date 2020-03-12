@@ -82,6 +82,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/My_pushswap.dir/additional.c.o"
   "CMakeFiles/My_pushswap.dir/mix.c.o"
   "CMakeFiles/My_pushswap.dir/push_swap.c.o"
+  "CMakeFiles/My_pushswap.dir/sort.c.o"
   "CMakeFiles/My_pushswap.dir/validation.c.o"
   "My_pushswap"
   "My_pushswap.pdb"

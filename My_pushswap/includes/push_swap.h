@@ -41,4 +41,6 @@ void            p_a_b(t_a     **take,t_a     **put);
 void            ft_stack_three(t_a **stack);
 t_p             *min_max_med(t_p *new);
 int             *quick_sort(int *massiv,int min,int size);
+void            sort_other(t_p *new);
+void            sort_by_mediana(int mediana,t_a **stack,t_a **stack_b);
 #endif

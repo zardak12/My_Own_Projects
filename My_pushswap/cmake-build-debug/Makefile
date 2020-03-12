@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mark/Desktop/pushswap/My_pushswap
+CMAKE_SOURCE_DIR = /Users/kosgrey/Desktop/pushswap/My_pushswap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/kosgrey/Desktop/pushswap/My_pushswap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kosgrey/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles /Users/kosgrey/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kosgrey/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2364,6 +2364,33 @@ push_swap.c.s:
 	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
+sort.o: sort.c.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.c.o:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/sort.c.o
+.PHONY : sort.c.o
+
+sort.i: sort.c.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.c.i:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/sort.c.i
+.PHONY : sort.c.i
+
+sort.s: sort.c.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.c.s:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/sort.c.s
+.PHONY : sort.c.s
+
 validation.o: validation.c.o
 
 .PHONY : validation.o
@@ -2649,6 +2676,9 @@ help:
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... validation.o"
 	@echo "... validation.i"
 	@echo "... validation.s"
