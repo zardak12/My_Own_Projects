@@ -11,6 +11,7 @@
 typedef struct	stack_A
 {
 	int f_a;
+	int index;
 	struct stack_A *next;
 }				t_a;
 
@@ -22,25 +23,30 @@ typedef struct	s_push_swap
 	int count_a;
 	int max;
 	int min;
+	int min_index;
 	int mediana;
 }				t_p;
 
 void			print_steck(t_a *stack);
 void			err(char *msg);
 t_a             *create_first_stack(t_a    **stack_a,char *b);
-t_a		        *create_stack(t_a	**stack_a,char *b);
+t_a		        *create_stack(t_a	**stack_a,char *b,int figure);
 t_p				*validator(int a,char **b);
 int	            ft_validation_int(const char *str);
-void		    c_s(t_a	**stack);
+void		    c_s(t_a	**stack,int index);
 void		    c_ss(t_a	**stack_a,t_a	**stack_b);
-void		    c_r(t_a	**stack);
+void		    c_r(t_a	**stack,int index);
 void		    c_rs(t_a	**stack_a,t_a	**stack_b);
-void		    c_rr(t_a	**stack);
+void		    c_rr(t_a	**stack,int index);
 void            c_rrs(t_a    **stack_a,t_a   **stack_b);
-void            p_a_b(t_a     **take,t_a     **put);
+void            p_a_b(t_a     **take,t_a     **put,char *b);
 void            ft_stack_three(t_a **stack);
 t_p             *min_max_med(t_p *new);
 int             *quick_sort(int *massiv,int min,int size);
 void            sort_other(t_p *new);
 void            sort_by_mediana(int mediana,t_a **stack,t_a **stack_b);
+int             find_min(t_p    *stack);
+void            rep_r(t_p *new,int a);
+void            rep_rr(t_a  **stack,int a);
+int             find_count(t_a *stack);
 #endif

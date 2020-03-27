@@ -6,15 +6,6 @@ void	err(char *msg)
 	exit(0);
 }
 
-//void		print_steck(t_a *stack)
-//{
-//	if(stack)
-//	{
-//		ft_printf("%d\n",stack->f_a);
-//		print_steck(stack->next);
-//	}
-//}
-
 void		print_steck(t_a *stack)
 {
 	while(stack != NULL)
@@ -23,8 +14,7 @@ void		print_steck(t_a *stack)
 		stack = stack->next;
 	}
 }
-
-//должны создать массив отсрортировать его найти в в нем миниальное максимальное и медиану и вернуть это в структуре new
+/*
 t_p     *min_max_med(t_p *new)
 {
     t_a *head;
@@ -44,8 +34,9 @@ t_p     *min_max_med(t_p *new)
     massiv = quick_sort(massiv,0,new->count_a);
     new->min = massiv[0];
     new->max = massiv[new->count_a-1];
-    new->mediana = (massiv[new->count_a/2] + massiv[new->count_a/2 -1])/2;
+    new->mediana = massiv[new->count_a/2];
     i = 0;
+    //ВРЕМЕННО
     while(i < (new->count_a)) {
         ft_printf("%d\t", massiv[i]);
         i++;
@@ -55,6 +46,41 @@ t_p     *min_max_med(t_p *new)
     ft_printf("mediana -%d\n",new->mediana);
     free(massiv);
     return new;
+}*/
+
+int     find_min(t_p    *stack)
+{
+    t_a *head;
+
+    head = stack->s_a;
+    stack->min = stack->s_a->f_a;
+    stack->min_index = stack->s_a->index;
+    stack->s_a = stack->s_a->next;
+    while(stack->s_a != NULL)
+    {
+        if(stack->s_a->f_a < stack->min) {
+            stack->min = stack->s_a->f_a;
+            stack->min_index = stack->s_a->index;
+        }
+        stack->s_a = stack->s_a->next;
+    }
+    stack->s_a = head;
+    return (stack->min_index);
+}
+
+int     find_count(t_a *stack)
+{
+    t_a *head;
+    int i;
+
+    i = 0;
+    head = stack;
+    while(stack != NULL)
+    {
+        stack = stack->next;
+        i++;
+    }
+    return i;
 }
 
 int    *quick_sort(int *massiv,int min,int size)

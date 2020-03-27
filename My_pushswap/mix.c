@@ -1,12 +1,16 @@
 #include "push_swap.h"
 
-void		c_s(t_a	**stack)
+void		c_s(t_a	**stack,int index)
 {
 	int tmp;
 	if(*stack != NULL && (*stack)->next != NULL) {
 		tmp = (*stack)->f_a;
 		(*stack)->f_a = (*stack)->next->f_a;
 		(*stack)->next->f_a = tmp;
+		if(index == 1)
+		    ft_printf("%s\n","sa");
+        else if(index == 2)
+            ft_printf("%s\n","sb");
 	}
 	else
 	{
@@ -16,11 +20,12 @@ void		c_s(t_a	**stack)
 
 void		c_ss(t_a	**stack_a,t_a	**stack_b)
 {
-	c_s(stack_a);
-	c_s(stack_b);
+	c_s(stack_a,0);
+	c_s(stack_b,0);
+    ft_printf("%s\n","ss");
 }
 
-void		c_r(t_a	**stack)
+void		c_r(t_a	**stack,int index)
 {
 	int tmp;
 	t_a 	*head;
@@ -34,16 +39,21 @@ void		c_r(t_a	**stack)
 		}
 		(*stack)->f_a = tmp;
 		(*stack) = head;
+        if(index == 1)
+            ft_printf("%s\n","ra");
+        else if(index == 2)
+            ft_printf("%s\n","rb");
 	}
 }
 
 void		c_rs(t_a	**stack_a,t_a	**stack_b)
 {
-	c_s(stack_a);
-	c_s(stack_b);
+	c_r(stack_a,0);
+	c_r(stack_b,0);
+	ft_printf("%s\n","rs");
 }
 
-void		c_rr(t_a	**stack) {
+void		c_rr(t_a	**stack,int index) {
 	t_a *head;
 	t_a *new;
 	int tmp;
@@ -57,23 +67,25 @@ void		c_rr(t_a	**stack) {
 		new = (*stack)->next;
 		(*stack)->next = NULL;
 		*stack = new;
+        if(index == 1)
+            ft_printf("%s\n","rra");
+        else if(index == 2)
+            ft_printf("%s\n","rrb");
 	}
 }
 
 void        c_rrs(t_a    **stack_a,t_a   **stack_b)
 {
-	c_rr(stack_a);
-	c_rr(stack_b);
+	c_rr(stack_a,0);
+	c_rr(stack_b,0);
+	ft_printf("%s\n","rrs");
 }
 
-void        p_a_b(t_a     **take,t_a     **put)
+void        p_a_b(t_a     **take,t_a     **put,char *b)
 {
 	t_a *tmp;
 
 	if(*put == NULL) {
-//		(*put) = ft_memalloc(sizeof(t_a));
-//		(*put)->f_a = (*take)->f_a;
-//		(*take) = (*put)->next;
 		*put = *take;
 		*take = (*take)->next;
 		(*put)->next = NULL;
@@ -85,4 +97,5 @@ void        p_a_b(t_a     **take,t_a     **put)
 		tmp->next = *put;
 		*put = tmp;
 	}
+    ft_printf("%s\n",b);
 }
