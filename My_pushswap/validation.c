@@ -34,7 +34,6 @@ t_a		*create_first_stack(t_a    **stack_a,char *b)
         a = 1;
 		if (!((*stack_a) = (t_a*)malloc(sizeof(t_a))))
 			return NULL;
-        (*stack_a)->index = a;
 		(*stack_a)->f_a = ft_validation_int(b);
 		(*stack_a)->next = NULL;
 		return (*stack_a);
@@ -53,7 +52,6 @@ t_a		*create_stack(t_a	**stack_a,char *b,int figure)
 	tmp->next = NULL;
 	(*stack_a)->next = tmp;
 	*stack_a = (*stack_a)->next;
-    (*stack_a)->index = figure;
 	(*stack_a)->f_a = ft_validation_int(b);
 	(*stack_a)->next = NULL;
 	(*stack_a)= head;
@@ -79,6 +77,6 @@ t_p		*validator(int a,char **b)
 		i++;
 	}
 	new->count_a = i - 1;
-	//min_max_med(new);
+	validation(new);
 	return new;
 }

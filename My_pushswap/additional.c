@@ -1,5 +1,24 @@
 #include "push_swap.h"
 
+t_p     *validation(t_p *stack)
+{
+    int *massiv;
+    int i;
+
+    massiv = (int*)malloc(stack->count_a * sizeof(int));
+    i = 0;
+    massiv = push_massiv(massiv,stack->s_a);
+    find_repeats(massiv);
+    massiv = quick_sort(massiv,0,stack->count_a);
+    stack->min = massiv[0];
+    stack->max = massiv[stack->count_a-1];
+    stack->mediana = massiv[stack->count_a/2];
+    put_index(&stack->s_a,massiv);
+    free(massiv);
+    return stack;
+}
+
+
 void	err(char *msg)
 {
 	ft_printf("%s\n",msg);
@@ -14,58 +33,28 @@ void		print_steck(t_a *stack)
 		stack = stack->next;
 	}
 }
-/*
-t_p     *min_max_med(t_p *new)
+
+
+
+void    find_repeats(int *massiv)
 {
     t_a *head;
-    int *massiv;
     int i;
+    int j;
 
-    massiv = (int*)malloc(new->count_a * sizeof(int));
     i = 0;
-    head = new->s_a;
-    while(new->s_a != NULL)
+    j = 1;
+    while(massiv[i])
     {
-        massiv[i] = new->s_a->f_a;
-        new->s_a = new->s_a->next;
-        i++;
-    }
-    new->s_a = head;
-    massiv = quick_sort(massiv,0,new->count_a);
-    new->min = massiv[0];
-    new->max = massiv[new->count_a-1];
-    new->mediana = massiv[new->count_a/2];
-    i = 0;
-    //ВРЕМЕННО
-    while(i < (new->count_a)) {
-        ft_printf("%d\t", massiv[i]);
-        i++;
-    }
-    ft_printf("\nmin -%d\n",new->min);
-    ft_printf("max -%d\n",new->max);
-    ft_printf("mediana -%d\n",new->mediana);
-    free(massiv);
-    return new;
-}*/
-
-int     find_min(t_p    *stack)
-{
-    t_a *head;
-
-    head = stack->s_a;
-    stack->min = stack->s_a->f_a;
-    stack->min_index = stack->s_a->index;
-    stack->s_a = stack->s_a->next;
-    while(stack->s_a != NULL)
-    {
-        if(stack->s_a->f_a < stack->min) {
-            stack->min = stack->s_a->f_a;
-            stack->min_index = stack->s_a->index;
+        while(massiv[j])
+        {
+            if(massiv[i] == massiv[j])
+                err("Error");
+            j++;
         }
-        stack->s_a = stack->s_a->next;
+        i++;
     }
-    stack->s_a = head;
-    return (stack->min_index);
+
 }
 
 int     find_count(t_a *stack)
@@ -80,6 +69,7 @@ int     find_count(t_a *stack)
         stack = stack->next;
         i++;
     }
+    stack = head;
     return i;
 }
 
@@ -115,3 +105,105 @@ int    *quick_sort(int *massiv,int min,int size)
         quick_sort(massiv,0,right);
     return massiv;
 }
+
+void free_mem(t_p *stack)
+{
+    free_stack(stack->s_a);
+    free_stack(stack->s_b);
+    free(stack);
+}
+
+void	free_stack(t_a *stack)
+{
+    if (stack->next)
+        free_stack(stack->next);
+    free(stack);
+}
+
+
+
+
+
+
+int     *push_massiv(int *massiv,t_a *stack)
+{
+    t_a *head;
+    int i;
+
+    i = 0;
+    head = stack;
+    while(stack != NULL)
+    {
+        massiv[i] = stack->f_a;
+        stack = stack->next;
+        i++;
+    }
+    stack = head;
+    return massiv;
+}
+
+
+void     put_index(t_a **stack,int *massiv)
+{
+    int i;
+    t_a *head;
+
+    i = 0;
+    head = *stack;
+    while(massiv[i])
+    {
+        *stack = head;
+        while((*stack)->f_a != massiv[i] && stack != NULL)
+        {
+            (*stack) = (*stack)->next;
+        }
+        //if(stack->f_a == massiv[i])
+        (*stack)->index = i + 1;
+        i++;
+    }
+    *stack = head;
+}
+
+t_p     *min_max_med(t_p *new)
+{
+    t_a *head;
+    int *massiv;
+    int i;
+
+    massiv = (int*)malloc(new->count_a * sizeof(int));
+    i = 0;
+    head = new->s_a;
+    while(new->s_a != NULL)
+    {
+        massiv[i] = new->s_a->f_a;
+        new->s_a = new->s_a->next;
+        i++;
+    }
+    new->s_a = head;
+    find_repeats(massiv);
+    massiv = quick_sort(massiv,0,new->count_a);
+    //new->max_a = massiv[new->count_a-1];
+    new->mediana = massiv[new->count_a/2];
+    free(massiv);
+    return new;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

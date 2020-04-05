@@ -28,17 +28,24 @@ void		c_ss(t_a	**stack_a,t_a	**stack_b)
 void		c_r(t_a	**stack,int index)
 {
 	int tmp;
+	int pos;
 	t_a 	*head;
 
-	if(*stack != NULL && (*stack)->next != NULL) {
+	if(*stack  && (*stack)->next) {
 		head = (*stack);
-		tmp = (*stack)->f_a;
-		while ((*stack)->next != NULL) {
+		/*tmp = (*stack)->f_a;
+		while ((*stack)->next) {
 			(*stack)->f_a = (*stack)->next->f_a;
 			(*stack) = (*stack)->next;
 		}
 		(*stack)->f_a = tmp;
-		(*stack) = head;
+		(*stack) = head;*/
+		while(head->next)
+		    head = head->next;
+		head->next = *stack;
+		*stack = (*stack)->next;
+		head = head->next;
+		head->next = NULL;
         if(index == 1)
             ft_printf("%s\n","ra");
         else if(index == 2)
@@ -57,8 +64,8 @@ void		c_rr(t_a	**stack,int index) {
 	t_a *head;
 	t_a *new;
 	int tmp;
-
-	if (*stack != NULL && (*stack)->next != NULL) {
+/*
+	if (*stack && (*stack)->next) {
 		head = *stack;
 		while ((*stack)->next != NULL && (*stack)->next->next != NULL) {
 			*stack = (*stack)->next;
@@ -67,12 +74,26 @@ void		c_rr(t_a	**stack,int index) {
 		new = (*stack)->next;
 		(*stack)->next = NULL;
 		*stack = new;
-        if(index == 1)
-            ft_printf("%s\n","rra");
-        else if(index == 2)
-            ft_printf("%s\n","rrb");
-	}
+		*/
+    if (*stack && (*stack)->next)
+    {
+        head = *stack;
+        while (head->next)
+        {
+            new = head;
+            head = head->next;
+        }
+        new->next = NULL;
+        head->next = *stack;
+        *stack = head;
+    }
+    if(index == 1)
+        ft_printf("%s\n","rra");
+    else if(index == 2)
+        ft_printf("%s\n","rrb");
+
 }
+
 
 void        c_rrs(t_a    **stack_a,t_a   **stack_b)
 {
@@ -81,21 +102,20 @@ void        c_rrs(t_a    **stack_a,t_a   **stack_b)
 	ft_printf("%s\n","rrs");
 }
 
-void        p_a_b(t_a     **take,t_a     **put,char *b)
+void        p_a_b(t_a     **take,t_a     **put,int index)
 {
-	t_a *tmp;
+    t_a *tmp;
 
-	if(*put == NULL) {
-		*put = *take;
-		*take = (*take)->next;
-		(*put)->next = NULL;
-	}
-	else
-	{
-		tmp = *take;
-		*take =(*take)->next;
-		tmp->next = *put;
-		*put = tmp;
-	}
-    ft_printf("%s\n",b);
+    if(*take)
+    {
+        tmp = *take;
+        *take = (*take)->next;
+        tmp->next = *put;
+        *put = tmp;
+    }
+
+	if(index == 1)
+        ft_printf("%s\n","pb");
+	if(index == 2)
+        ft_printf("%s\n","pa");
 }

@@ -7,10 +7,10 @@ int main (int ac,char **av)
 
 	stack = validator(ac,av);
 	if(stack->count_a == 3)
-	    ft_stack_three(&stack->s_a);
+        ft_stack_three(&stack->s_a);
     else
-        sort_other(stack);
-
+        sort(stack);
+    free(stack);
     print_steck(stack->s_a);
 	return(0);
 }
