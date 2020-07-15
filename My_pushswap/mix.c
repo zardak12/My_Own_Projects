@@ -18,11 +18,12 @@ void		c_s(t_a	**stack,int index)
 	}
 }
 
-void		c_ss(t_a	**stack_a,t_a	**stack_b)
+void		c_ss(t_a	**stack_a,t_a	**stack_b,int index)
 {
 	c_s(stack_a,0);
 	c_s(stack_b,0);
-    ft_printf("%s\n","ss");
+	if(index == 1)
+        ft_printf("%s\n","ss");
 }
 
 void		c_r(t_a	**stack,int index)
@@ -53,11 +54,12 @@ void		c_r(t_a	**stack,int index)
 	}
 }
 
-void		c_rs(t_a	**stack_a,t_a	**stack_b)
+void		c_rs(t_a	**stack_a,t_a	**stack_b,int index)
 {
 	c_r(stack_a,0);
 	c_r(stack_b,0);
-	ft_printf("%s\n","rs");
+	if(index == 1)
+	    ft_printf("%s\n","rs");
 }
 
 void		c_rr(t_a	**stack,int index) {
@@ -95,11 +97,12 @@ void		c_rr(t_a	**stack,int index) {
 }
 
 
-void        c_rrs(t_a    **stack_a,t_a   **stack_b)
+void        c_rrs(t_a    **stack_a,t_a   **stack_b,int index)
 {
 	c_rr(stack_a,0);
 	c_rr(stack_b,0);
-	ft_printf("%s\n","rrs");
+	if(index == 1)
+	    ft_printf("%s\n","rrs");
 }
 
 void        p_a_b(t_a     **take,t_a     **put,int index)

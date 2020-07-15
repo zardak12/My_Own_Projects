@@ -89,12 +89,16 @@ PRINTF_COMPILED = free_conv.o \
 
 GET_COMPILED = get_next_line.o \
 
-PUSH_COMPILE =	push_swap.c \
-				validation.c\
+PUSHSWAP = push_swap.c
+
+ALL_COMPILE =	validation.c\
 				mix.c\
 				additional.c\
 				sort.c\
+				find.c\
+				add_ch.c\
 
+CHECKER    =  checker.c\
 
 COMPILED = $(FT_COMPILED) $(PRINTF_COMPILED) $(GET_COMPILED)
 
@@ -106,7 +110,8 @@ all : $(NAME)
 $(NAME):$(COMPILED)
 	ar rc $(NAME) $(COMPILED)
 	ranlib $(NAME)
-	$(CC) -g -o push_swap $(DFLAGS) $(PUSH_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
+	$(CC) -g -o push_swap $(DFLAGS) $(PUSHSWAP) $(ALL_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
+	$(CC) -g -o checker $(DFLAGS) $(CHECKER) $(ALL_COMPILE) $(NAME) -I $(HEADER_DIRECTORY)
 $(FT_COMPILED): %.o:$(LIBFT)%.c $(LIBFT_H)
 	$(CC) -c $(DFLAGS) -I $(HEADER_DIRECTORY) $< -o $@
 

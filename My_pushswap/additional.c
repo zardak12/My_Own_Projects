@@ -8,6 +8,9 @@ t_p     *validation(t_p *stack)
     massiv = (int*)malloc(stack->count_a * sizeof(int));
     i = 0;
     massiv = push_massiv(massiv,stack->s_a);
+    //проверка на нужность нам пуш свапа
+    if(check_on_order(stack->s_a) == 1)
+    	exit(0);
     find_repeats(massiv);
     massiv = quick_sort(massiv,0,stack->count_a);
     stack->min = massiv[0];
@@ -18,59 +21,44 @@ t_p     *validation(t_p *stack)
     return stack;
 }
 
+int		check_on_order(t_a *stack)
+{
+	t_a *head;
+
+	head = stack;
+	while(stack != NULL)
+	{
+		if(stack->f_a < stack->next->f_a)
+			stack = stack->next;
+		else
+		{
+			stack = head;
+			return 0;
+		}
+	}
+	stack = head;
+	return 1;
+}
 
 void	err(char *msg)
 {
 	ft_printf("%s\n",msg);
-	exit(0);
+	exit(1);
 }
 
 void		print_steck(t_a *stack)
 {
+	//t_a *head;
+
+	//head = stack;
+	if(stack == NULL)
+		ft_printf("%s\n","FUCK\n");
 	while(stack != NULL)
 	{
 		ft_printf("%d\n",stack->f_a);
 		stack = stack->next;
 	}
-}
-
-
-
-void    find_repeats(int *massiv)
-{
-    t_a *head;
-    int i;
-    int j;
-
-    i = 0;
-    j = 1;
-    while(massiv[i])
-    {
-        while(massiv[j])
-        {
-            if(massiv[i] == massiv[j])
-                err("Error");
-            j++;
-        }
-        i++;
-    }
-
-}
-
-int     find_count(t_a *stack)
-{
-    t_a *head;
-    int i;
-
-    i = 0;
-    head = stack;
-    while(stack != NULL)
-    {
-        stack = stack->next;
-        i++;
-    }
-    stack = head;
-    return i;
+	//stack = head;
 }
 
 int    *quick_sort(int *massiv,int min,int size)
@@ -106,20 +94,22 @@ int    *quick_sort(int *massiv,int min,int size)
     return massiv;
 }
 
+/*
 void free_mem(t_p *stack)
 {
     free_stack(stack->s_a);
     free_stack(stack->s_b);
     free(stack);
 }
-
+*/
+/*
 void	free_stack(t_a *stack)
 {
     if (stack->next)
         free_stack(stack->next);
     free(stack);
 }
-
+*/
 
 
 
@@ -164,7 +154,7 @@ void     put_index(t_a **stack,int *massiv)
     *stack = head;
 }
 
-t_p     *min_max_med(t_p *new)
+/*t_p     *min_max_med(t_p *new)
 {
     t_a *head;
     int *massiv;
@@ -186,9 +176,32 @@ t_p     *min_max_med(t_p *new)
     new->mediana = massiv[new->count_a/2];
     free(massiv);
     return new;
+}*/
+
+void	        free_stack(t_p *stack)
+{
+    t_a *head_a;
+    t_a *delete_a;
+    t_a *head_b;
+    t_a *delete_b;
+
+
+    head_a = stack->s_a;
+    head_b = stack->s_b;
+    while(head_a != NULL)
+    {
+        delete_a = head_a;
+        head_a = head_a->next;
+        free(delete_a);
+    }
+    while(head_b != NULL)
+    {
+        delete_b = head_b;
+        head_b = head_b->next;
+        free(delete_b);
+    }
+    free(stack);
 }
-
-
 
 
 

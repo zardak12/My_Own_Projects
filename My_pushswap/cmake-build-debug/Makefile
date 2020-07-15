@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mark/Desktop/pushswap/My_pushswap
+CMAKE_SOURCE_DIR = "/Users/mark/Desktop/<Code>/pushswap/My_pushswap"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles" "/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -2283,6 +2283,33 @@ Printf/string_conv.c.s:
 	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/Printf/string_conv.c.s
 .PHONY : Printf/string_conv.c.s
 
+add_ch.o: add_ch.c.o
+
+.PHONY : add_ch.o
+
+# target to build an object file
+add_ch.c.o:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/add_ch.c.o
+.PHONY : add_ch.c.o
+
+add_ch.i: add_ch.c.i
+
+.PHONY : add_ch.i
+
+# target to preprocess a source file
+add_ch.c.i:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/add_ch.c.i
+.PHONY : add_ch.c.i
+
+add_ch.s: add_ch.c.s
+
+.PHONY : add_ch.s
+
+# target to generate assembly for a file
+add_ch.c.s:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/add_ch.c.s
+.PHONY : add_ch.c.s
+
 additional.o: additional.c.o
 
 .PHONY : additional.o
@@ -2309,6 +2336,33 @@ additional.s: additional.c.s
 additional.c.s:
 	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/additional.c.s
 .PHONY : additional.c.s
+
+find.o: find.c.o
+
+.PHONY : find.o
+
+# target to build an object file
+find.c.o:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/find.c.o
+.PHONY : find.c.o
+
+find.i: find.c.i
+
+.PHONY : find.i
+
+# target to preprocess a source file
+find.c.i:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/find.c.i
+.PHONY : find.c.i
+
+find.s: find.c.s
+
+.PHONY : find.s
+
+# target to generate assembly for a file
+find.c.s:
+	$(MAKE) -f CMakeFiles/My_pushswap.dir/build.make CMakeFiles/My_pushswap.dir/find.c.s
+.PHONY : find.c.s
 
 mix.o: mix.c.o
 
@@ -2667,9 +2721,15 @@ help:
 	@echo "... Printf/string_conv.o"
 	@echo "... Printf/string_conv.i"
 	@echo "... Printf/string_conv.s"
+	@echo "... add_ch.o"
+	@echo "... add_ch.i"
+	@echo "... add_ch.s"
 	@echo "... additional.o"
 	@echo "... additional.i"
 	@echo "... additional.s"
+	@echo "... find.o"
+	@echo "... find.i"
+	@echo "... find.s"
 	@echo "... mix.o"
 	@echo "... mix.i"
 	@echo "... mix.s"

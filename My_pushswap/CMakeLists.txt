@@ -90,7 +90,9 @@ add_executable(My_pushswap
         Printf/print_conversion.c
         Printf/print_num.c
         Printf/string_conv.c
+        add_ch.c
         additional.c
+        find.c
         mix.c
         push_swap.c
         sort.c

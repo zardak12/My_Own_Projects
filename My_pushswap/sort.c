@@ -20,6 +20,47 @@ void        ft_stack_three(t_a **stack)
         c_rr(stack,1);
 }
 
+void 		ft_stack_five(t_p *stack) {
+
+	int i;
+
+	i = 2;
+	while (i)
+	{
+		if(stack->s_a->f_a == stack->max || stack->s_a->f_a == stack->min)
+		{
+			i--;
+			p_a_b(&stack->s_a,&stack->s_b,1);
+		} else
+			c_r(&stack->s_a, 1);
+	}
+	ft_stack_three(&stack->s_a);
+	if(stack->s_b->f_a == stack->min)
+		c_s(&stack->s_b,1);
+	p_a_b(&stack->s_b,&stack->s_a,2);
+	c_r(&stack->s_a, 1);
+	p_a_b(&stack->s_b,&stack->s_a,2);
+
+
+
+
+
+
+
+	/*
+	ft_stack_three(stack->s_a);
+	//продумываем вставку
+	while(stack->s_b)
+	{
+		check_b(stack);
+		find_summa(stack->s_b);
+		find_move_b(stack);
+		push_to_a(stack);
+		p_a_b(&stack->s_b,&stack->s_a,2);
+	}
+	*/
+}
+
 void        sort(t_p *stack)
 {
     int i;
@@ -82,12 +123,12 @@ void        push_to_a(t_p *stack)
        if(stack->rr != 0)
        {
            stack->rr--;
-           c_rs(&stack->s_a,&stack->s_b);
+           c_rs(&stack->s_a,&stack->s_b,1);
        }
        if(stack->rrr != 0)
        {
            stack->rrr--;
-           c_rrs(&stack->s_a,&stack->s_b);
+           c_rrs(&stack->s_a,&stack->s_b,1);
        }
    }
    while(stack->ra) {
@@ -118,11 +159,12 @@ void     find_move_b(t_p *stack) {
     {
         head = stack->s_b;
         while (stack->s_b != NULL) {
-            if (stack->s_b->count.sum < i)
+            if (stack->s_b->count.sum < i && stack->s_b)
                 i = stack->s_b->count.sum;
             stack->s_b = stack->s_b->next;
         }
         stack->s_b = head;
+        start_find(stack);
         fill(stack, i);
     }
 }
@@ -193,7 +235,7 @@ void     check_b(t_p *stack)
             stack->s_b->count.rb = stack->s_b->position;
         else
         {
-            stack->s_b->count.rrb = stack->count_b - mediana - i;
+            stack->s_b->count.rrb = stack->count_b - stack->s_b->position;
             i++;
         }
         preparation(stack,stack->s_b->f_a);
@@ -223,32 +265,8 @@ void     preparation(t_p *stack,int figure)
     else
     {
         stack->s_b->count.rra = stack->count_a - stack->s_a->position;
-        i++;
     }
     stack->s_a = head;
-}
-
-int    find_need_value(t_p *stack,int figure)
-{
-    t_a *head;
-    int i;
-    int b;
-
-    i = 0;
-    head = stack->s_a;
-    while(stack->s_a !=  NULL)
-    {
-        if(stack->s_a->f_a > figure)
-        {
-            if(i == 0)
-                i = stack->s_a->f_a;
-            if(stack->s_a->f_a < i && i != 0)
-                i = stack->s_a->f_a;
-        }
-        stack->s_a = stack->s_a->next;
-    }
-    stack->s_a = head;
-    return i;
 }
 
 void    count_start(t_a *stack)
@@ -260,62 +278,4 @@ void    count_start(t_a *stack)
     stack->count.rrb = 0;
     stack->count.rrr = 0;
     stack->count.sum = 0;
-}
-
-int    find_mediana(t_a *stack)
-{
-    int i;
-
-    i = find_count(stack);
-   return (i/2);
-}
-
-int        find_position(t_a *stack,int f_a)
-{
-    t_a *head;
-    int i;
-
-    i = 0;
-    head = stack;
-    while(stack->index != f_a)
-    {
-        i++;
-        stack = stack->next;
-    }
-    stack = head;
-    return i;
-}
-
-void        find_all_position(t_a *stack)
-{
-    t_a *head;
-    int i;
-
-    i = 0;
-    head = stack;
-    while(stack != NULL)
-    {
-        stack->position = i;
-        i++;
-        stack = stack->next;
-    }
-    stack = head;
-}
-
-
-
-void        rep_r(t_p *new,t_a **stack,int a,int b)
-{
-    while ((*stack)->f_a != b)
-    {
-        c_r(stack,a);
-    }
-}
-
-void        rep_rr(t_a  **stack,int a,int b)
-{
-    while ((*stack)->f_a != b)
-    {
-        c_rr(stack,a);
-    }
 }

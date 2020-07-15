@@ -21,9 +21,9 @@ int	ft_validation_int(const char *str)
 		i++;
 	}
 	if(str[i] != '\0')
-		err("Скажи,честно y тебя руки из жопы растут?Цифры братан цифры....");
+		err("Error");
 	if ((num > INT_MAX) || (num <= INT_MIN))
-		error("Слишком дохуя братан");
+		error("Error");
 	return (sign * num);
 }
 
@@ -77,6 +77,6 @@ t_p		*validator(int a,char **b)
 		i++;
 	}
 	new->count_a = i - 1;
-	validation(new);
+	validation(new);// сделано не все в валидации !!!
 	return new;
 }

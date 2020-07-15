@@ -1,8 +1,8 @@
 #ifndef PUSH_SWAP
 #define PUSH_SWAP
 
-//#define INT_MAX "2147483647"
-//#define INT_MIN "-2147483647"
+#define INT_MAX "2147483647"
+#define INT_MIN "-2147483647"
 #include "ft_printf.h"
 #include "libft.h"
 #include "get_next_line.h"
@@ -55,11 +55,11 @@ t_a		        *create_stack(t_a	**stack_a,char *b,int figure);
 t_p				*validator(int a,char **b);
 int	            ft_validation_int(const char *str);
 void		    c_s(t_a	**stack,int index);
-void		    c_ss(t_a	**stack_a,t_a	**stack_b);
+void		    c_ss(t_a	**stack_a,t_a	**stack_b,int index);
 void		    c_r(t_a	**stack,int index);
-void		    c_rs(t_a	**stack_a,t_a	**stack_b);
+void		    c_rs(t_a	**stack_a,t_a	**stack_b,int index);
 void		    c_rr(t_a	**stack,int index);
-void            c_rrs(t_a    **stack_a,t_a   **stack_b);
+void            c_rrs(t_a    **stack_a,t_a   **stack_b,int index);
 void            p_a_b(t_a     **take,t_a     **put,int index);
 void            ft_stack_three(t_a **stack);
 t_p             *min_max_med(t_p *new);
@@ -77,8 +77,8 @@ t_a             *sort_stack_a(t_p *new);
 t_a             *sort_stack_b(t_p *new);
 t_a             *sort_stack_by_max(t_p *new);
 void            free_mem(t_p *stack);
-void	        free_stack(t_a *stack);
-
+void	        free_stack(t_p *stack);
+void            exec_command(t_p *stack,char *command);
 void            find_summa(t_a *stack);
 void            check_b(t_p *stack);
 int             find_need_value(t_p *stack,int figure);
@@ -97,4 +97,7 @@ void            find_move_b(t_p *stack);
 void            fill(t_p *stack,int i);
 void            push_to_a(t_p *stack);
 void            start_find(t_p *stack);
+int             check_is_sorted(t_p *checker);
+void 			ft_stack_five(t_p *stack);
+int				check_on_order(t_a *stack);
 #endif

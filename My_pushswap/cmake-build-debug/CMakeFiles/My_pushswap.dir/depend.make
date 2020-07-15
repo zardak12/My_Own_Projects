@@ -248,11 +248,23 @@ CMakeFiles/My_pushswap.dir/Printf/string_conv.c.o: ../includes/ft_printf.h
 CMakeFiles/My_pushswap.dir/Printf/string_conv.c.o: ../includes/libft.h
 CMakeFiles/My_pushswap.dir/Printf/string_conv.c.o: ../Printf/string_conv.c
 
+CMakeFiles/My_pushswap.dir/add_ch.c.o: ../includes/ft_printf.h
+CMakeFiles/My_pushswap.dir/add_ch.c.o: ../includes/get_next_line.h
+CMakeFiles/My_pushswap.dir/add_ch.c.o: ../includes/libft.h
+CMakeFiles/My_pushswap.dir/add_ch.c.o: ../includes/push_swap.h
+CMakeFiles/My_pushswap.dir/add_ch.c.o: ../add_ch.c
+
 CMakeFiles/My_pushswap.dir/additional.c.o: ../includes/ft_printf.h
 CMakeFiles/My_pushswap.dir/additional.c.o: ../includes/get_next_line.h
 CMakeFiles/My_pushswap.dir/additional.c.o: ../includes/libft.h
 CMakeFiles/My_pushswap.dir/additional.c.o: ../includes/push_swap.h
 CMakeFiles/My_pushswap.dir/additional.c.o: ../additional.c
+
+CMakeFiles/My_pushswap.dir/find.c.o: ../includes/ft_printf.h
+CMakeFiles/My_pushswap.dir/find.c.o: ../includes/get_next_line.h
+CMakeFiles/My_pushswap.dir/find.c.o: ../includes/libft.h
+CMakeFiles/My_pushswap.dir/find.c.o: ../includes/push_swap.h
+CMakeFiles/My_pushswap.dir/find.c.o: ../find.c
 
 CMakeFiles/My_pushswap.dir/mix.c.o: ../includes/ft_printf.h
 CMakeFiles/My_pushswap.dir/mix.c.o: ../includes/get_next_line.h

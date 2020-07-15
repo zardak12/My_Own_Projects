@@ -1,3 +1,3 @@
-/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mark/Desktop/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/My_pushswap.dir
+/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mark/Desktop/<Code>/pushswap/My_pushswap/cmake-build-debug/CMakeFiles/My_pushswap.dir
