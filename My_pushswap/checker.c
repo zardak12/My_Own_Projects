@@ -6,17 +6,20 @@ int main(int ac,char **av)
     char *line;
     int c;
 
-    checker = validator(ac,av);
-    while( (c = get_next_line(0,&line)) > 0)
-    {
-        exec_command(checker,line);
-        free(line);
-    }
-    print_steck(checker->s_a);
-    if (check_is_sorted(checker) == 1 && checker->s_b == NULL)
-        ft_printf("%s\n","OK");
+    if(ac > 2) {
+		checker = validator(ac, av);
+		while ((c = get_next_line(0, &line)) > 0) {
+			exec_command(checker, line);
+			free(line);
+		}
+		print_steck(checker->s_a);
+		if (check_is_sorted(checker) == 1 && checker->s_b == NULL)
+			ft_printf("%s\n", "OK");
+		else
+			err("KO");
+		free_stack(checker);
+	}
     else
-        err("KO");
-    free_stack(checker);
+		check_err(av);
     return 0;
 }

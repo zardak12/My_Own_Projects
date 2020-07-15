@@ -26,7 +26,7 @@ int		check_on_order(t_a *stack)
 	t_a *head;
 
 	head = stack;
-	while(stack != NULL)
+	while(stack->next != NULL)
 	{
 		if(stack->f_a < stack->next->f_a)
 			stack = stack->next;
@@ -93,26 +93,6 @@ int    *quick_sort(int *massiv,int min,int size)
         quick_sort(massiv,0,right);
     return massiv;
 }
-
-/*
-void free_mem(t_p *stack)
-{
-    free_stack(stack->s_a);
-    free_stack(stack->s_b);
-    free(stack);
-}
-*/
-/*
-void	free_stack(t_a *stack)
-{
-    if (stack->next)
-        free_stack(stack->next);
-    free(stack);
-}
-*/
-
-
-
 
 
 int     *push_massiv(int *massiv,t_a *stack)
@@ -205,7 +185,22 @@ void	        free_stack(t_p *stack)
 
 
 
+void		check_err(char **av)
+{
+	int i;
 
+	i = 0;
+	if(av[1] == NULL)
+		exit(0);
+	while(av[1][i])
+	{
+		if(ft_isdigit(av[1][i]) == 0)
+			err("Error");
+		i++;
+	}
+	if(ft_validation_int(av[1]))
+		exit(0);
+}
 
 
 

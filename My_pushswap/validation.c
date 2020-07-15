@@ -3,7 +3,7 @@
 int	ft_validation_int(const char *str)
 {
 	int sign;
-	int num;
+	long long num;
 	int i;
 
 	if (ft_strlen(str) == 0)
@@ -15,15 +15,14 @@ int	ft_validation_int(const char *str)
 		i++;
 		sign = -sign;
 	}
-
 	while (str[i] >= '0' && str[i] <= '9' && str[i]) {
 		num = num * 10 + (str[i] - '0');
 		i++;
 	}
 	if(str[i] != '\0')
 		err("Error");
-	if ((num > INT_MAX) || (num <= INT_MIN))
-		error("Error");
+	if ((num > INT_MAX) || (num < INT_MIN))
+		err("Error");
 	return (sign * num);
 }
 

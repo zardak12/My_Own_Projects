@@ -40,25 +40,6 @@ void 		ft_stack_five(t_p *stack) {
 	p_a_b(&stack->s_b,&stack->s_a,2);
 	c_r(&stack->s_a, 1);
 	p_a_b(&stack->s_b,&stack->s_a,2);
-
-
-
-
-
-
-
-	/*
-	ft_stack_three(stack->s_a);
-	//продумываем вставку
-	while(stack->s_b)
-	{
-		check_b(stack);
-		find_summa(stack->s_b);
-		find_move_b(stack);
-		push_to_a(stack);
-		p_a_b(&stack->s_b,&stack->s_a,2);
-	}
-	*/
 }
 
 void        sort(t_p *stack)

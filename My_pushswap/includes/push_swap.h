@@ -100,4 +100,5 @@ void            start_find(t_p *stack);
 int             check_is_sorted(t_p *checker);
 void 			ft_stack_five(t_p *stack);
 int				check_on_order(t_a *stack);
+void			check_err(char **av);
 #endif

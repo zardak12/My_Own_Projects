@@ -16,7 +16,7 @@ int main (int ac,char **av)
             sort(stack);
         free_stack(stack);
     } else
-        err("Error");
+    	check_err(av);
 
 //	ft_printf("%s\n","START\n");
 //    print_steck(stack->s_a);
